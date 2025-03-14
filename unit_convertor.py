@@ -165,9 +165,10 @@ with col2:
     
     
 
-if st.button("Convert") and value1 and unit_to1 and unit_from1:
-    result = convert_units(value1, unit_from1, unit_to1)
-    st.markdown(f"""Converted Value:  <strong style="font-size: 25px; color: red "> {round(result, 3)}</strong>""", unsafe_allow_html=True)
-else:
-    st.markdown(f"""Please insert the <strong style="color: red "> Value </strong> and select <strong style="color: red ">Units</strong>""", unsafe_allow_html=True)
+if st.button("Convert"):
+    if value1 and unit_to1 and unit_from1:
+        result = convert_units(value1, unit_from1, unit_to1)
+        st.markdown(f"""Converted Value:  <strong style="font-size: 25px; color: red "> {round(result, 3)}</strong>""", unsafe_allow_html=True)
+    else:
+        st.markdown(f"""Please insert the <strong style="color: red "> Value </strong> and select <strong style="color: red ">Units</strong>""", unsafe_allow_html=True)
     
