@@ -335,6 +335,7 @@ volume_units = [
 ]
 
 st.markdown("<h1 style='text-align: center;'>Unit convertor</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: right;'>ILLAHI BUX  (Roll No.249403)</p>", unsafe_allow_html=True)
 
 select_main_options = st.selectbox("", main_options)
 
