@@ -1,0 +1,13 @@
+
+fuel_economy_units = [
+    "Kilometer per liter",
+    "Mile per US gallon",
+    "Mile per gallon",
+    "Kilometer per liter"
+]
+
+fuel_economy_conversion_factors = {
+    "kilometer per liter": 1,              # Base unit
+    "mile per us gallon": 0.425144,        # 1 mpg (US) ≈ 0.425144 km/L
+    "mile per gallon": 0.425144            # Assuming US gallon, same as above
+}
